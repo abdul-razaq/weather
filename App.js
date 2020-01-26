@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Text,
-  Platform,
-  KeyboardAvoidingView,
-} from 'react-native';
+import { StyleSheet, Text, Platform, KeyboardAvoidingView } from 'react-native';
+import SearchInput from './components/SearchInput';
 
 export default function App() {
   return (
@@ -15,7 +11,7 @@ export default function App() {
         24 degree celsius
       </Text>
 
-      
+      <SearchInput placeholder="Search any city" />
     </KeyboardAvoidingView>
   );
 }

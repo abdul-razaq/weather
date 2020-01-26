@@ -16,6 +16,8 @@ export default function App() {
       <Text style={[styles.largeText, styles.textStyle]}>
         24 degree celsius
       </Text>
+
+      <TextInput autoCorrect={false} placeholder="Search any city" placeholderTextColor="white" style={styles.textInput} clearButtonMode="always" />
     </View>
   );
 }

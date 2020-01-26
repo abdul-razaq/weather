@@ -10,7 +10,7 @@ import {
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <KeyboardAvoidingView style={styles.container} behavior="padding">
       <Text style={[styles.largeText, styles.textStyle]}>San Francisco</Text>
       <Text style={[styles.smallText, styles.textStyle]}>Light Cloud</Text>
       <Text style={[styles.largeText, styles.textStyle]}>
@@ -24,7 +24,7 @@ export default function App() {
         style={styles.textInput}
         clearButtonMode="always"
       />
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 
@@ -54,5 +54,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     paddingHorizontal: 10,
     alignSelf: 'center',
+    borderRadius: 5,
   },
 });

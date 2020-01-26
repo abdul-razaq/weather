@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, Platform, KeyboardAvoidingView } from 'react-native';
+
 import SearchInput from './components/SearchInput';
 
 export default function App() {

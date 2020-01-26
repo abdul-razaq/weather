@@ -11,6 +11,7 @@ export default class SearchInput extends React.Component {
           placeholderTextColor="white"
           style={styles.textInput}
           clearButtonMode="always"
+          underlineColorAndroid="transparent"
         />
       </View>
     );

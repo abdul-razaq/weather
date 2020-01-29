@@ -15,16 +15,13 @@ import SearchInput from './components/SearchInput';
 import getImageForWeather from './utils/getImageForWeather';
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      location: '',
-      loading: false,
-      error: false,
-      temperature: 0,
-      weather: '',
-    };
-  }
+  state = {
+    location: '',
+    loading: false,
+    error: false,
+    temperature: 0,
+    weather: '',
+  };
 
   componentDidMount = () => {
     this.handleUpdateLocation('Lagos');
@@ -63,7 +60,7 @@ export default class App extends React.Component {
       <KeyboardAvoidingView style={styles.container} behavior="padding">
         <StatusBar barStyle="light-content" />
         <ImageBackground
-          source={getImageForWeather('Clear')}
+          source={getImageForWeather(weather)}
           style={styles.imageContainer}
           imageStyle={styles.image}
         >
